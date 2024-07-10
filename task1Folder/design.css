@@ -1,0 +1,82 @@
+#right{
+    background-color:  rgb(9, 81, 175);
+    color: white;
+    border-color: transparent;
+    font-size: large;
+    font-weight:bold;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 200px;
+    cursor: pointer;
+}
+
+#left{
+    background-color: rgb(9, 81, 175);
+    color: white;
+    border-color: transparent;
+    font-size: large;
+    font-weight:bold;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 200px;
+    left: 115px;
+    cursor: pointer;
+}
+
+#forward{
+    background-color:  rgb(9, 81, 175);
+    color: white;
+    font-size: large;
+    font-weight:bold;
+    border-color: transparent;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 100px;
+    left:110px;
+    cursor: pointer;
+}
+
+#backward{
+    background-color: rgb(9, 81, 175);
+    color: white;
+    border-color: transparent;
+    font-size: large;
+    font-weight:bold;
+    width: 100px;
+    height: 100px;
+    top:300px;
+    left: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+#stop{
+    background-color: rgb(28, 3, 3);
+    color: white;
+    border-color: transparent;
+    font-size: large;
+    font-weight:bold;
+    width: 100px;
+    height: 100px;
+    top:200px;
+    left: 316px;
+    position: relative;
+    cursor: pointer;
+}
+#res{
+    background-color: rgb(233, 13, 31);
+    border-radius: 50%;
+    border-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight:bold;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    cursor: pointer;
+}
