@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interface</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div id="design">
+        <form method="post" action="controller.php">
+            <button name="dir" type="submit" id="stop" value="stop">stop</button>
+            <button name="dir" type="submit" id="left" value="left">left</button>
+            <button name="dir" type="submit" id="forward" value="front">forward</button>
+            <button name="dir" type="submit" id="backward" value="back">backward</button>
+            <button name="dir" type="submit" id="right" value="right">right</button>
+        </form>
+    </div>
+
+    
+    <form action="last-move.php" method="get">
+        <button type="submit" id="res" value="last"">see the last move</button>
+    </form>
+</body>
+</html>
+
