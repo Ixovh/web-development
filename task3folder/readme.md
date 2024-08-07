@@ -57,3 +57,6 @@
             Serial.println(httpResponseCode);
         }
     ```
+
+    the result in serial monitor:  
+    ![photo](result.jpg)
