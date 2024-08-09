@@ -141,4 +141,14 @@
         ```
         first it will take the argument from the user and sends it to server.js file the will process the arugment and produce the equvalent response  
         second the output it will shows at second div tage the output it will eihter the response or the error message  
-        
+
+* **To start the chatbot you use this command on terminal**
+    ```SH
+        node server.js
+    ```
+
+    if its work correctly you will this output  
+    ![photo](./image2.png)
+
+    and the final result it will should look like that also i asked the model to write a simple C plus plus code  
+    ![photo](image1.png)
