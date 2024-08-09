@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #response {
+            margin: 20px 300px;
+            padding: 10px;
+            border: 1px solid #f9f9f9;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+	<div align="center">
+    <h1>Chat with Me</h1>
+    <form id="chatForm">
+        <label for="prompt">أدخل استفسارك أو سؤالك</label><br>
+        <textarea id="prompt" name="prompt" rows="2" cols="30"></textarea><br><br>
+        <input type="submit" value="إرسال">
+    </form>
+    <div id="response"></div>
+	</div>
+    <script>
+        document.getElementById('chatForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const prompt = document.getElementById('prompt').value;
 
+            try {
+                const response = await fetch('http://localhost:3000/api/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ prompt })
+                });
+                const data = await response.json();
+                document.getElementById('response').innerText = data.response;
+            } catch (error) {
+                document.getElementById('response').innerText = 'Error: ' + error.message;
+            }
+        });
+    </script>
+</body>
+</html>
