@@ -10,6 +10,7 @@
     * we need only esp32, servo and jumper wires
     
     * connect servo with esp32 in any pin that is a signal input/output
+    * then access it through the ip address the shows in serial monitor
 
 * **Output**
     * i tried 3 different values  
